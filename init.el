@@ -1,9 +1,9 @@
-;;; init.el --- Bozhidar's Emacs configuration
+;;; init.el --- tiny's Emacs configuration
 ;;
-;; Copyright (c) 2016 Bozhidar Batsov
+;; Copyright (c) 2018 tiny zhang
 ;;
-;; Author: Bozhidar Batsov <bozhidar@batsov.com>
-;; URL: https://github.com/bbatsov/emacs.d
+;; Author: tiny zhang <tiny911@hotmail.com>
+;; URL: https://github.com/tiny911/emacs.d
 ;; Keywords: convenience
 
 ;; This file is not part of GNU Emacs.
@@ -42,8 +42,8 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(setq user-full-name "Bozhidar Batsov"
-      user-mail-address "bozhidar@batsov.com")
+(setq user-full-name "tiny zhang"
+      user-mail-address "tiny911@hotmail.com")
 
 ;; Always load newest byte code
 (setq load-prefer-newer t)
