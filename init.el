@@ -191,12 +191,12 @@ Start `ielm' if it's not already running."
 ;; highlight the current line
 (global-hl-line-mode +1)
 
-(use-package avy
-  :ensure t
-  :bind (("s-." . avy-goto-word-or-subword-1)
-         ("s-," . avy-goto-char))
-  :config
-  (setq avy-background t))
+;;(use-package avy
+;;  :ensure t
+;;  :bind (("s-." . avy-goto-word-or-subword-1)
+;;         ("s-," . avy-goto-char))
+;;  :config
+;;  (setq avy-background t))
 
 (use-package magit
   :ensure t
@@ -205,12 +205,12 @@ Start `ielm' if it's not already running."
 (use-package ag
   :ensure t)
 
-(use-package projectile
-  :ensure t
-  :bind ("s-p" . projectile-command-map)
-  :config
-  (setq projectile-completion-system 'ivy)
-  (projectile-global-mode +1))
+;;(use-package projectile
+;;  :ensure t
+;;  :bind ("s-p" . projectile-command-map)
+;;  :config
+;;  (setq projectile-completion-system 'ivy)
+;;  (projectile-global-mode +1))
 
 (use-package pt
   :ensure t)
@@ -472,35 +472,35 @@ Start `ielm' if it's not already running."
         `((".*" . ,temporary-file-directory)))
   (setq undo-tree-auto-save-history t))
 
-(use-package ivy
-  :ensure t
-  :config
-    (ivy-mode 1)
-  (setq ivy-use-virtual-buffers t)
-  (setq enable-recursive-minibuffers t)
-  (global-set-key (kbd "C-c C-r") 'ivy-resume)
-  (global-set-key (kbd "<f6>") 'ivy-resume))
-
-(use-package swiper
-  :ensure t
-  :config
-  (global-set-key "\C-s" 'swiper))
-
-(use-package counsel
-  :ensure t
-  :config
-  (global-set-key (kbd "M-x") 'counsel-M-x)
-  (global-set-key (kbd "C-x C-f") 'counsel-find-file)
-  (global-set-key (kbd "<f1> f") 'counsel-describe-function)
-  (global-set-key (kbd "<f1> v") 'counsel-describe-variable)
-  (global-set-key (kbd "<f1> l") 'counsel-find-library)
-  (global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
-  (global-set-key (kbd "<f2> u") 'counsel-unicode-char)
-  (global-set-key (kbd "C-c g") 'counsel-git)
-  (global-set-key (kbd "C-c j") 'counsel-git-grep)
-  (global-set-key (kbd "C-c k") 'counsel-ag)
-  (global-set-key (kbd "C-x l") 'counsel-locate)
-  (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history))
+;;(use-package ivy
+;;  :ensure t
+;;  :config
+;;    (ivy-mode 1)
+;;  (setq ivy-use-virtual-buffers t)
+;;  (setq enable-recursive-minibuffers t)
+;;  (global-set-key (kbd "C-c C-r") 'ivy-resume)
+;;  (global-set-key (kbd "<f6>") 'ivy-resume))
+;;
+;;(use-package swiper
+;;  :ensure t
+;;  :config
+;;  (global-set-key "\C-s" 'swiper))
+;;
+;;(use-package counsel
+;;  :ensure t
+;;  :config
+;;  (global-set-key (kbd "M-x") 'counsel-M-x)
+;;  (global-set-key (kbd "C-x C-f") 'counsel-find-file)
+;;  (global-set-key (kbd "<f1> f") 'counsel-describe-function)
+;;  (global-set-key (kbd "<f1> v") 'counsel-describe-variable)
+;;  (global-set-key (kbd "<f1> l") 'counsel-find-library)
+;;  (global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
+;;  (global-set-key (kbd "<f2> u") 'counsel-unicode-char)
+;;  (global-set-key (kbd "C-c g") 'counsel-git)
+;;  (global-set-key (kbd "C-c j") 'counsel-git-grep)
+;;  (global-set-key (kbd "C-c k") 'counsel-ag)
+;;  (global-set-key (kbd "C-x l") 'counsel-locate)
+;;  (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history))
 
 (when (eq system-type 'windows-nt)
   (setq w32-pass-lwindow-to-system nil)
